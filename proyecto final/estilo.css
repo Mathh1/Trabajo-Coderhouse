@@ -1,0 +1,321 @@
+@media only screen and (max-width: 700px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-image: url(./imagenes/428228.jpg);
+        background-size: 100%;
+    }
+    
+    .container{
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "headergrid"
+        "cuentagrid"
+        "iniciogrid"
+        "footergrid";
+    }
+    
+    header{
+        background-color: black;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        grid-area: headergrid;
+    }
+    h4{
+        position:relative;
+        color: white;
+        justify-content: center;
+    }
+    .logo{
+        position: relative;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        transition: 1.5s;
+        text-decoration: none;
+        justify-content: center;
+    }
+    nav h4{   
+        list-style: none;
+        padding: 0;
+        margin: 5%;
+        background-color: black;
+        position:relative;
+        color: white;
+        justify-content: center;
+        font-size: 1rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(3, 3, 3);
+        display: flex;
+        justify-content: baseline;
+    }
+    nav ul a li .cuenta{
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    nav ul a{
+        color: white;
+        text-decoration: none;
+        padding: 1.5rem;
+        display: block;
+    }
+    nav li a:hover{
+        background-color: #888888;
+        color:black;
+        font-weight: bold;
+    }
+    
+    
+    .sesion{
+        color: #fff;
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        width: 0;
+        padding: 0;
+        grid-area: iniciogrid;
+        display: flex;
+    }
+    fieldset{
+        background-color: black;
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+    }
+    .mensaje{
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        width: 80%;
+        
+    }
+    .crear{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+    }
+    .terminos{
+        font-size: 15px;
+    }
+    .inicio{
+        color: rgb(255, 254, 254);
+        text-align: center;
+        font-size: 10px;
+        flex-direction: column;
+        grid-area: iniciogrid;
+        box-sizing: border-box;
+    }
+    .somos{
+        font-size: 10px;
+    }
+    .footergrid{
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        bottom: 0;
+        color: #fff;
+        grid-area: footergrid;
+    
+    }
+    .cuentagrid{
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        grid-area: cuentagrid;
+    }
+    .iniciogrid{
+        flex-direction: column;
+        text-align: center;
+        grid-area: iniciogrid;
+        width: 70%;
+    }
+    .inciar{
+        flex-direction: column;
+        background-color: black;
+        position: relative;
+    }
+    .cuenta{
+        position: absolute;
+        font-size: 14px;
+        text-align: center;
+    }
+    .texto{
+        text-align: center;
+        font-size: 10px;
+    }
+    .somoscaja{
+        position: absolute;
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+
+    }
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./imagenes/428228.jpg);
+    background-size: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "headergrid"
+    "cuentagrid"
+    "iniciogrid"
+    "footergrid";
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    grid-area: headergrid;
+}
+
+nav{
+    padding: 0;
+}
+h4{
+    position:fixed;
+    color: white;
+    padding: 10px;
+}
+.logo{
+    position: fixed;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(3, 3, 3);
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul a li .cuenta{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem;
+    display: block;
+}
+nav li a:hover{
+    background-color: #888888;
+    color:black;
+    font-weight: bold;
+}
+
+
+.sesion{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    padding: 40px;
+    grid-area: iniciogrid;
+    
+}
+h2{
+    font-size: 30px;
+    padding: 30px;
+}
+fieldset{
+    background-color: black;
+    padding: 40px;
+    font-size: 20px;
+    display: inline-block;
+
+}
+.crear{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.terminos{
+    font-size: 15px;
+}
+.inicio{
+    color: rgb(255, 254, 254);
+    padding: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
+    grid-area: iniciogrid;
+}
+.somos{
+    font-size: 40px;
+    padding: 30;
+}
+.footergrid{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 1em 0;
+    text-align: center;
+    bottom: 0;
+    color: #fff;
+    grid-area: footergrid;
+
+}
+.cuentagrid{
+    grid-area: cuentagrid;
+    padding: 4rem;
+}
+.cuenta{
+    position: fixed;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.texto{
+    color: rgb(255, 254, 254);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 45px;
+}
